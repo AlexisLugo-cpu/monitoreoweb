@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Color claro por defecto */
+  color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.night-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Encabezado y logo */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.night-mode .header {
+  background-color: #333;
+  color: white;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 80px;
+}
+
+/* Zona de perfil y modo oscuro */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.toggle-mode-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* Zona de menú inferior */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.night-mode .menu-container {
+  background-color: #333;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-item.disabled {
+  color: gray;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.navbar-item:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* Estilo del contenido principal */
+main {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,134 @@
+:root {
+  --color-primario: #007bff;
+  --color-hover: #0056b3;
+  --color-editar: #ffc107;
+  --color-eliminar: #dc3545;
+  --color-formulario: #f9f9f9;
+  --color-texto: #333;
+}
+
+/* Estilos base para el panel */
+.admin-panel {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.admin-panel h2, h3 {
+  color: var(--color-texto);
+  margin-bottom: 1rem;
+}
+
+/* Estilos para botones */
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  background-color: var(--color-primario);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-hover);
+}
+
+/* Botón "Ver detalles" */
+.details-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #218838;
+}
+
+/* Mensajes de error */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Estilos para la lista de lanchas */
+.lancha-lista {
+  margin-top: 2rem;
+}
+
+.lancha-item {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.edit-btn {
+  background-color: var(--color-editar);
+}
+
+.delete-btn {
+  background-color: var(--color-eliminar);
+}
+
+/* MODAL PARA EL FORMULARIO y Detalles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px; /* Ajusta el ancho máximo para pantallas grandes */
+  max-height: 90vh; /* Limita la altura para evitar que sobresalga */
+  overflow-y: auto; /* Agrega scroll si el contenido es extenso */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones del formulario */
+.form-section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.lancha-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacio entre secciones */
+}
+
+.lancha-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
